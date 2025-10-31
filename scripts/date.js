@@ -1,0 +1,1 @@
+const today = 0;
