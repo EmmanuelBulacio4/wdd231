@@ -5,6 +5,7 @@
     --font-color: ;
 }
 
+
 *{
     font-family: var(--font);
     box-sizing: border-box;
