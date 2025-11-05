@@ -1,0 +1,26 @@
+{
+    "family_name" : "Bulacio",
+    "move_data" : "2018-12-12",
+    "num_records": 4,
+    "is_visited" : true,
+    "family_members" : [{
+        "name" : "Emmanuel Bulacio",
+        "gender" : "Male",
+        "birthday": "1991-02-04"
+    },
+    {
+        "name" : "Rita Bulacio",
+        "gender" : "Female",
+        "birthday": "1991-08-21"
+    },
+    {
+        "name" : "Amanda Bulacio",
+        "gender" : "Female",
+        "birthday": "2019-04-26"
+    },{
+        "name" : "Benjamin Bulacio",
+        "gender" : "Male",
+        "birthday": "2025-05-21"
+    }
+    ]
+}
