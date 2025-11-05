@@ -126,7 +126,7 @@ footer{
     border: solid black 1px;
     margin: 10px;
     border-radius: 5px;
-    grid-template-rows: 1 fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .two div{
