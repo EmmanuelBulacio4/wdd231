@@ -86,3 +86,37 @@ const courses = [
         completed: false
     }
 ]
+
+createSubjectCard(courses);
+
+const numCredits = document.querySelector('#credits');
+
+const all = document.querySelector('#all');
+const wdd = document.querySelector('#wdd');
+const cse = document.querySelector('#cse')
+
+
+all.addEventListener("click", () => {
+    createSubjectCard(courses);
+});
+
+
+
+
+function createSubjectCard(subjects){
+    const container = document.querySelector('#courses');
+    container.innerHTML = "";
+
+    subjects.forEach(subject => {
+        let card = document.createElement("section");
+        card.classList.add("course-card");
+
+        card.innerHTML = `
+            <span>${subject.completed ? "&#10004;" : ""}</span>
+            <span>${subject.subject}</span>
+            <span>${subject.number}</span>
+        `;
+
+        container.appendChild(card);
+    });
+}
