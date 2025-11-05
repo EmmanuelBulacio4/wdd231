@@ -101,15 +101,23 @@ all.addEventListener("click", () => {
 wdd.addEventListener("click", () => {
     const web = courses.filter(course => course.subject === "WDD");
     createSubjectCard(web);
+
+    const numCredits = document.querySelector('#credits');
+    let creditos = web.reduce((acc, web) => acc + web.credits, 0);
+    numCredits.textContent = creditos;
 })
 
 cse.addEventListener("click", () => {
     const prog = courses.filter(course => course.subject === "CSE");
     createSubjectCard(prog);
+
+    const numCredits = document.querySelector('#credits');
+    let creditos = prog.reduce((acc, prog) => acc + prog.credits, 0);
+    numCredits.textContent = creditos;
 })
 
 
-function createSubjectCard(subjects){
+function createSubjectCard(subjects) {
     const container = document.querySelector('#courses');
     container.innerHTML = "";
 
@@ -128,4 +136,6 @@ function createSubjectCard(subjects){
 }
 
 const numCredits = document.querySelector('#credits');
+let creditos = courses.reduce((acc, course) => acc+course.credits, 0);
+numCredits.textContent = creditos;
 
