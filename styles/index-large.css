@@ -29,6 +29,10 @@
         border-bottom: none;
     }
 
+    #buttons{
+        column-gap: 1rem;
+    }
+
     #courses {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

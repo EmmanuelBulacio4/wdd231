@@ -89,8 +89,6 @@ const courses = [
 
 createSubjectCard(courses);
 
-const numCredits = document.querySelector('#credits');
-
 const all = document.querySelector('#all');
 const wdd = document.querySelector('#wdd');
 const cse = document.querySelector('#cse')
@@ -100,7 +98,15 @@ all.addEventListener("click", () => {
     createSubjectCard(courses);
 });
 
+wdd.addEventListener("click", () => {
+    const web = courses.filter(course => course.subject === "WDD");
+    createSubjectCard(web);
+})
 
+cse.addEventListener("click", () => {
+    const prog = courses.filter(course => course.subject === "CSE");
+    createSubjectCard(prog);
+})
 
 
 function createSubjectCard(subjects){
@@ -120,3 +126,6 @@ function createSubjectCard(subjects){
         container.appendChild(card);
     });
 }
+
+const numCredits = document.querySelector('#credits');
+
