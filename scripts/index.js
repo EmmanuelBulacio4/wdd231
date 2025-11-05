@@ -96,6 +96,10 @@ const cse = document.querySelector('#cse')
 
 all.addEventListener("click", () => {
     createSubjectCard(courses);
+
+    const numCredits = document.querySelector('#credits');
+    let creditos = courses.reduce((acc, course) => acc + course.credits, 0);
+    numCredits.textContent = creditos;
 });
 
 wdd.addEventListener("click", () => {
@@ -136,6 +140,6 @@ function createSubjectCard(subjects) {
 }
 
 const numCredits = document.querySelector('#credits');
-let creditos = courses.reduce((acc, course) => acc+course.credits, 0);
+let creditos = courses.reduce((acc, course) => acc + course.credits, 0);
 numCredits.textContent = creditos;
 
