@@ -31,6 +31,11 @@ header span{
     color: var(--second-bg);
 }
 
+h1{
+    margin-left: 10px;
+    color: var(--second-bg);
+}
+
 /* ---------------HAMBURGER-------------------- */
 .hamburger{
     background: none;
@@ -78,11 +83,6 @@ header span{
 
 .navigation li.current{
     background-color: #eee;
-}
-
-h1{
-    margin-left: 10px;
-    color: var(--second-bg);
 }
 
 /* ---------------FOOTER-------------------- */
