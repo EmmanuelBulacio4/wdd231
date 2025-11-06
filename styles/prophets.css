@@ -4,13 +4,15 @@
     --backgoround-cards: ;
 }
 
+body{
+    background-color: #c7bdbd;
+}
+
 h1{
     text-align: center;
     font-family: var(--font-family);
-    border-bottom: solid #ddd 1px;
-    background-color: antiquewhite;
     padding: 1.5rem;
-    text-decoration: underline;
+
 }
 
 #cards{
@@ -18,10 +20,15 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 15px;
     margin: 0 auto;
-    padding: 20px;
-};
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 15px 5px 15px 5px rgb(139, 136, 136);
+}
 
 .prophet{
-    border:solid 1px #ddd;
-    background-color: aqua;
+    text-align: center;
+    border: solid rgb(75, 72, 72) 1px;
+    border-radius: 10px;
+    background-color: #a39c9c;
+    box-shadow: 2px 2px grey;
 }
