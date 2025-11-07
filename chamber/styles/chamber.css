@@ -1,34 +1,107 @@
+:root{
+    --Primary-color: ;
+    --Secondary-color: ;
+    --Background-color: ;
+    --Text-color: ;
+    --Font-family: "Zalando Sans", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--Font-family);
+}
+
+/* ---------------HEADER----------------------- */
+header{
+    display: grid;
+    grid-template-columns: 35px auto 44px 44px;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+    border-bottom: solid 1px grey;
+    column-gap: 5px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header h1{
+    margin: 0;
+    padding-left: 5px;
+}
+
+.theme{
+    width: 90%;
+}
+
+/* ---------------NAVIGATION-------------------- */
+
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.navigation a{
+    display: block;
+    padding: .8rem 10px;
+    color: var(--second-bg);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover{
+    background-color: grey;    /*AGREGAR UNA VAR()*/
+}
+
+.navigation li.current{
+    background-color: #c33939;  /*AGREGAR UNA VAR()*/
+}
+
 /* ---------------HAMBURGER-------------------- */
 .hamburger{
     background: none;
     border: none;
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hamburger::before {
     content: "\2630";
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 .hamburger.show::before {
     content: "\00D7";
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
-
 
 /* ---------------FOOTER-------------------- */
 
-/* footer{
-    background-color: #eee;
-    padding: 1rem 10px;
-    text-align: center;
-} */
+footer{
+    align-items: center;
+}
+
+.info{
+    padding-left: 5px;
+}
 
 .social{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .social a{
@@ -49,4 +122,10 @@
 .social a:hover{
     background-color: #ddd;
     
+}
+
+.course{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
