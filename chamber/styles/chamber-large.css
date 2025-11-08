@@ -1,12 +1,6 @@
 @media screen and (min-width: 640px) {
     
     /*------General-------*/
-    header,
-    main,
-    nav,
-    footer {
-        margin: 0 auto;
-    }
 
     /*------HEADER-------*/
     header{
@@ -54,6 +48,4 @@
         justify-content: space-around;
         column-gap: 10px;
     }
-
-
 }
