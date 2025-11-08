@@ -52,7 +52,7 @@ getMembers();
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector("#member-dir");
 
 
 

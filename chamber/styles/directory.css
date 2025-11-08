@@ -93,9 +93,9 @@ h3 {
 		font-size: 1rem;
 		}
 
-.list &:nth-child(even) {
+/* .list:nth-child(even) {
 		background-color: #bbb;
-}
+} */
 
 img {
 	width: auto;
