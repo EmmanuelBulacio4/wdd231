@@ -1,0 +1,67 @@
+{
+    "directory": [
+        {
+            "name": "AndesTech Solutions",
+            "addresses": "1023 Belgrano Ave, Salta, Argentina",
+            "phone": 3874567890,
+            "website": "www.andestech.com",
+            "image": "",
+            "level": 3,
+            "info": "Company specialized in software development and technology solutions for small and medium businesses."
+        },
+        {
+            "name": "La Cosecha Café",
+            "addresses": "450 Caseros St, Salta, Argentina",
+            "phone": 3874213344,
+            "website": "www.lacosechacafe.com",
+            "image": "",
+            "level": 2,
+            "info": "Artisan coffee shop known for its organic products and cozy atmosphere."
+        },
+        {
+            "name": "Transporte del Norte",
+            "addresses": "Route 9 Km 12, Salta, Argentina",
+            "phone": 3874239988,
+            "website": "www.transnorte.com",
+            "image": "",
+            "level": 1,
+            "info": "Freight and logistics company operating throughout the northwest region of Argentina."
+        },
+        {
+            "name": "EcoSalta Constructions",
+            "addresses": "987 San Martín Ave, Salta, Argentina",
+            "phone": 3874325566,
+            "website": "www.ecosalta.com",
+            "image": "",
+            "level": 2,
+            "info": "Construction company focused on sustainable projects and eco-friendly housing."
+        },
+        {
+            "name": "Hotel Mirador del Valle",
+            "addresses": "San Lorenzo Road s/n, Salta, Argentina",
+            "phone": 3874772233,
+            "website": "www.miradordelvalle.com",
+            "image": "",
+            "level": 3,
+            "info": "Boutique hotel with panoramic views, ideal for tourism and corporate events."
+        },
+        {
+            "name": "AgroAndina",
+            "addresses": "Industrial Park, Lot 15, Salta, Argentina",
+            "phone": 3874902234,
+            "website": "www.agroandina.com",
+            "image": "",
+            "level": 1,
+            "info": "Producer and distributor of agricultural supplies for the northwest region."
+        },
+        {
+            "name": "López & Associates Accounting Firm",
+            "addresses": "850 España St, Salta, Argentina",
+            "phone": 3874217789,
+            "website": "www.lopezasociados.com",
+            "image": "",
+            "level": 2,
+            "info": "Accounting and tax consulting services for local businesses."
+        }
+    ]
+}
