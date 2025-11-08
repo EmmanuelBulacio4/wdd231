@@ -11,8 +11,6 @@
         grid-column: 1/2;
     }
 
-
-
     .theme{
         grid-column: 4/5;
     }
@@ -22,6 +20,7 @@
         grid-column: 3/4;
         grid-row: 1/2;
         font-weight: 700;
+        display: inline-block;
     }
 
     /*------HAMBURGER-------*/
@@ -30,12 +29,10 @@
         display: none;
     }
 
-    .navigation {
-        display: inline-block;
-    }
-
     .navigation ul {
         display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
     }
 
     .navigation a {
