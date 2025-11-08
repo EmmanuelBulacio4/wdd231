@@ -21,7 +21,6 @@ header{
     column-gap: 5px;
     background-color: var(--Primary-color);
     color: var(--Text-color);
-    padding: 1.5rem;
 }
 
 header img{
@@ -51,6 +50,7 @@ header h1{
 .navigation.show{
     display: block;
     background-color: var(--Secondary-color);
+    grid-column: 1/5;
 }
 
 .navigation ul{
