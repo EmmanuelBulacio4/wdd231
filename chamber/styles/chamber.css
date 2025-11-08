@@ -16,7 +16,7 @@ header{
     display: grid;
     grid-template-columns: 35px auto 44px 44px;
     align-items: center;
-    padding: 5px 0 5px 5px;
+    padding: 5px 0 0px 5px;
     border-bottom: solid 1px grey;
     column-gap: 5px;
     background-color: var(--Primary-color);
