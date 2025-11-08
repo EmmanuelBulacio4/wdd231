@@ -7,18 +7,26 @@
     <title>Directory</title>
     <meta name="description" content="A Salta Argentina Chamber of Commerce | A WDD231 project">
     <meta name="author" content="Emmanuel Bulacio | WDD231 Web Frontend Development I">
+
+    <!-- CSS FILES -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <!-- GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="images/icono.svg"> <!--Agregar el icono-->
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icono.svg">
+
+    <!-- SOCIAL MEDIA-->
     <meta property="og:title" content="Salta Chamber of Commerce">
     <meta property="og:description" content="an unofficial web site of a chamber of commerce of Salta. ">
     <meta property="og:image" content="">
     <meta property="og:url" content="https://emmanuelbulacio4.github.io/wdd231/chamber/directory.html">
+
+    <!-- SCRIPTS -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
@@ -42,13 +50,13 @@
     
     <main>
         <h2>Directory</h2>
-        <div id="layout-btn" class="layout">
-            <button id="grid-btn" class="active">Grid</button>
-            <button id="flex-btn" class="">List</button>
+        <div id="layout-btn">
+            <button id="grid" class="layout">Grid</button>
+            <button id="list" class="active" class="layout">List</button>
         </div>
-        <div id="member-dir" class="directory">
+        <article id="member-dir" class="list">
 
-        </div>
+        </article>
     </main>
     <footer>
         <div class="info">
