@@ -4,7 +4,7 @@
 
     /*------HEADER-------*/
     header{
-        grid-template-columns: 24px auto auto 44px;
+        grid-template-columns: 35px auto auto 44px;
     }
 
     header img{

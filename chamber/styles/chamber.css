@@ -23,6 +23,11 @@ header{
     color: var(--Text-color);
 }
 
+.logo{
+    width: 35px;
+    height: auto;
+}
+
 header img{
     display: block;
     width: 100%;
