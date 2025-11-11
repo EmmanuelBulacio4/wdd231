@@ -9,8 +9,10 @@ function setSectionSelection(sections) {
 }
 
 export { setSectionSelection}
+// export function setSectionSelection(sections){}
 
 
 
 
 // En este archivo era la redundancia del objeto byui.Course que se eliminó de la linea 3. 
+//ademas que en la linea 11 donde exporto la funcion, la tenia mal exportada
