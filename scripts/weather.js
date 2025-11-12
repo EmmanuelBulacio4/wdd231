@@ -80,11 +80,4 @@ apiFetch();
 //         "id": 3165523,
 //             "name": "Province of Turin",
 //                 "cod": 200
-// } 
-=======
-const currentTEmp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('');
-
-const ur = 'https://api.openweathermap.org/data/2.5/_______';
->>>>>>> 9d2c7bf9a2df5bd2708cf80c028f5466bf243b6c
+// }
