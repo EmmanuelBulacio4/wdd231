@@ -1,5 +1,90 @@
+const currentTemp = document.querySelector('#current-temp');
+const watherIcon = document.querySelector('#weather-icon');
+const caption = document.querySelector('figcaption');
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid={902647b55a8f06d112512d2e9c5051f8}';
+
+async function apiFetch(url) {
+    try{
+        const response = await apiFetch();
+        if (response.OK){
+            const data = await response.JSON();
+            console.log(data);
+        }
+        else{
+            throw Error(await response.text());
+        }
+    } catch(error){
+        console.log(error);
+    }
+};
+
+apiFetch();
+
+
+
+
+
+
+
+
+
+
+
+
+// {
+//     "coord": {
+//         "lon": 7.367,
+//             "lat": 45.133
+//     },
+//     "weather": [
+//         {
+//             "id": 501,
+//             "main": "Rain",
+//             "description": "moderate rain",
+//             "icon": "10d"
+//         }
+//     ],
+//         "base": "stations",
+//             "main": {
+//         "temp": 284.2,
+//             "feels_like": 282.93,
+//                 "temp_min": 283.06,
+//                     "temp_max": 286.82,
+//                         "pressure": 1021,
+//                             "humidity": 60,
+//                                 "sea_level": 1021,
+//                                     "grnd_level": 910
+//     },
+//     "visibility": 10000,
+//         "wind": {
+//         "speed": 4.09,
+//             "deg": 121,
+//                 "gust": 3.47
+//     },
+//     "rain": {
+//         "1h": 2.73
+//     },
+//     "clouds": {
+//         "all": 83
+//     },
+//     "dt": 1726660758,
+//         "sys": {
+//         "type": 1,
+//             "id": 6736,
+//                 "country": "IT",
+//                     "sunrise": 1726636384,
+//                         "sunset": 1726680975
+//     },
+//     "timezone": 7200,
+//         "id": 3165523,
+//             "name": "Province of Turin",
+//                 "cod": 200
+// } 
+=======
 const currentTEmp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('');
 
 const ur = 'https://api.openweathermap.org/data/2.5/_______';
+>>>>>>> 9d2c7bf9a2df5bd2708cf80c028f5466bf243b6c
