@@ -61,6 +61,7 @@ h1{
 
 .navigation.show{
     display: block;
+    text-align: center;
 }
 
 .navigation ul{
@@ -82,7 +83,7 @@ h1{
 }
 
 .navigation li.current{
-    background-color: #eee;
+    background-color: #ece3e3;
 }
 
 /* ---------------FOOTER-------------------- */
