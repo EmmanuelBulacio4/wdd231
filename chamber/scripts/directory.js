@@ -17,22 +17,17 @@ const displayMembers = (members) => {
         let phone = document.createElement('p');
         let website = document.createElement('a');
         let image = document.createElement('img');
-        // let level = document.createElement('p');
-        // // let info = document.createElement('p');
 
         //Asigno los valores que tiene cada miembro a las etiquetas anteriores
         name.textContent = `${member.name}`;
         address.textContent = `${member.addresses}`;
         phone.textContent = `${member.phone}`;
-        // website.textContent = `${member.website}`;
         website.textContent = "WebSite";
         image.setAttribute("src", "");
         image.setAttribute("alt", "Main image of the member");
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "");
         image.setAttribute("height", "");
-        // level.textContent = `${member.level}`;
-        // info.textContent = `${member.info}`;
 
         //Agrego los elementos anteriores a la section (line 15)
         card.appendChild(image);
