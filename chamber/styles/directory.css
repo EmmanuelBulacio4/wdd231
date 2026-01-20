@@ -1,15 +1,3 @@
-:root{
-    --Primary-color: #000A3E;
-    --Secondary-color: #00afe5;
-    --Background-color: rgb(225, 221, 221);
-    --Text-color: white;
-    --Font-family: "Zalando Sans", sans-serif;
-}
-
-*{
-    font-family: var(--Font-family);
-}
-
 main {
 	margin: 0 auto;
 	padding: 0.5rem;
