@@ -23,11 +23,11 @@ const displayMembers = (members) => {
         address.textContent = `${member.addresses}`;
         phone.textContent = `${member.phone}`;
         website.textContent = "WebSite";
-        image.setAttribute("src", "");
+        image.setAttribute("src", member.image);
         image.setAttribute("alt", "Main image of the member");
         image.setAttribute("loading", "lazy");
-        image.setAttribute("width", "");
-        image.setAttribute("height", "");
+        // image.setAttribute("width", "300");
+        // image.setAttribute("height", "200");
 
         //Agrego los elementos anteriores a la section (line 15)
         card.appendChild(image);
