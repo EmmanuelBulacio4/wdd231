@@ -40,7 +40,11 @@
     }
 
     /* ------Main-------- */
-    
+    #first{
+        display: grid;
+        grid-template-columns: 60% 20% 20%;
+    }
+
 
     /*------FOOTER-------*/
     footer{
