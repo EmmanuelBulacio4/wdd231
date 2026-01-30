@@ -42,7 +42,8 @@
     /* ------Main-------- */
     #first{
         display: grid;
-        grid-template-columns: 60% 20% 20%;
+        grid-template-columns: 55% 21% 21%;
+        margin: 0 auto;
     }
 
 
