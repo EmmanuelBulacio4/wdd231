@@ -4,12 +4,7 @@ const myGraphic = document.querySelector('#graphic');
 const myDescription = document.querySelector('#description');
 const myTemperature = document.querySelector('#temperature');
 
-//URL
-const lat = -24.79;
-const lon = -65.44;
-const apiKey = "902647b55a8f06d112512d2e9c5051f8";
-
-const saltaCoord = '//api.openweathermap.org/data/2.5/weather?lat=-24.79&lon=-65.44&appid=902647b55a8f06d112512d2e9c5051f8&units=metric';
+const saltaCoord = 'https://api.openweathermap.org/data/2.5/weather?lat=-24.79&lon=-65.44&appid=902647b55a8f06d112512d2e9c5051f8&units=metric';
 
 async function apiFetch() {
     try {
@@ -29,7 +24,6 @@ async function apiFetch() {
 
 apiFetch();
 
-
 //Display
 function displayResults(data) {
     myTown.innerHTML = data.name;
@@ -41,7 +35,8 @@ function displayResults(data) {
 }
 
 
-// para mostrar 3 miembros de nivel plata u oro hay que
+// -----------------FORECAST WEATHER CODE--------------------------
+
 const saltaFore = `https://api.openweathermap.org/data/2.5/forecast?lat=-24.79&lon=-65.44&appid=902647b55a8f06d112512d2e9c5051f8&units=metric`;
 
 
@@ -78,4 +73,5 @@ function DisplayForecast(dataFore) {
 forecastWeather(saltaFore);
 
 
+//-------------- THREE RAMDON MEMBERS Level 2 or 3------------------
 
