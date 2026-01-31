@@ -1,4 +1,4 @@
-:root{
+:root {
     --Primary-color: #000A3E;
     --Secondary-color: #00afe5;
     --Background-color: rgb(225, 221, 221);
@@ -6,13 +6,15 @@
     --Font-family: "Zalando Sans", sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
     font-family: var(--Font-family);
+    max-width: 1200px;
+    /* margin: 0 auto; */
 }
 
 /* ---------------HEADER----------------------- */
-header{
+header {
     display: grid;
     grid-template-columns: 35px auto 44px 44px;
     align-items: center;
@@ -23,12 +25,12 @@ header{
     color: var(--Text-color);
 }
 
-.logo{
+.logo {
     width: 35px;
     height: auto;
 }
 
-header img{
+header img {
     display: block;
     width: 100%;
     height: auto;
@@ -37,34 +39,34 @@ header img{
     border: solid 1px;
 }
 
-header h1{
+header h1 {
     margin: 0;
-    padding-left: 5px;
+    padding-left: px;
 }
 
-.theme{
+.theme {
     width: 90%;
 }
 
 /* ---------------NAVIGATION-------------------- */
 
-.navigation{
+.navigation {
     display: none;
 }
 
-.navigation.show{
+.navigation.show {
     display: block;
     background-color: var(--Secondary-color);
     grid-column: 1/5;
 }
 
-.navigation ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-.navigation a{
+.navigation a {
     display: block;
     padding: .8rem 10px;
     color: var(--second-bg);
@@ -72,20 +74,22 @@ header h1{
     border-bottom: solid 1px #ddd;
 }
 
-.navigation a:hover{
-    background-color: grey;    /*AGREGAR UNA VAR()*/
+.navigation a:hover {
+    background-color: grey;
+    /*AGREGAR UNA VAR()*/
 }
 
-.navigation li.current{
-    background-color: #c33939;  /*AGREGAR UNA VAR()*/
+.navigation li.current {
+    background-color: #c33939;
+    /*AGREGAR UNA VAR()*/
 }
 
 /* ---------------HAMBURGER-------------------- */
-.hamburger{
+.hamburger {
     background: none;
     border: none;
     cursor: pointer;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hamburger::before {
@@ -93,20 +97,53 @@ header h1{
     font-size: 2.4rem;
     color: var(--Text-color);
 }
+
 .hamburger.show::before {
     content: "\00D7";
     font-size: 2.4rem;
 }
 
 /* ---------------MAIN-------------------- */
-#first{
+h2{
+    padding-left: 5px;
+}
+
+/************ Hero Image *************/
+.hero {
+    max-width: 1200px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.hero a {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--Primary-color);
+}
+
+
+#first {
     display: block;
     gap: 10px;
     padding: 10px;
     margin: 0 auto;
 }
 
-.w-card{
+.w-card {
     border: solid 1px black;
     border-radius: 5px;
     padding: 5px;
@@ -114,24 +151,25 @@ header h1{
     background-color: #b8b3b3;
 }
 
-.w-card img{
+.w-card img {
     height: 44px;
     width: 44px;
 }
+
 /* ---------------FOOTER-------------------- */
 
-footer{
+footer {
     align-items: center;
     color: var(--Text-color);
     background-color: var(--Primary-color);
 }
 
-.info{
+.info {
     padding-left: 5px;
     padding-top: 1rem;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +178,7 @@ footer{
     padding-bottom: 5px;
 }
 
-.social a{
+.social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,17 +188,17 @@ footer{
     border-radius: 8px;
 }
 
-.social img{
+.social img {
     width: 22px;
     height: 22px;
 }
 
-.social a:hover{
+.social a:hover {
     background-color: #4d4b4b;
-    
+
 }
 
-.course{
+.course {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
