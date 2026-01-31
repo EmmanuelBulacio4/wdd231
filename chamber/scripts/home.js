@@ -42,7 +42,7 @@ function displayResults(data) {
 
 
 // para mostrar 3 miembros de nivel plata u oro hay que
-const saltaFore = `https://api.openweathermap.org/data/3.0/onecall?lat=-24.79&lon=-65.44&exclude=current,minutely,hourly,alerts&appid=&appid=902647b55a8f06d112512d2e9c5051f8&units=metric`;
+const saltaFore = `https://api.openweathermap.org/data/2.5/forecast?lat=-24.79&lon=-65.44&exclude=current,minutely,hourly,alerts&appid=&appid=902647b55a8f06d112512d2e9c5051f8&units=metric`;
 
 const one = document.getElementById('one');
 const two = document.getElementById('two');
