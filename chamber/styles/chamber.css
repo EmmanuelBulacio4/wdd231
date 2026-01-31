@@ -9,8 +9,6 @@
 * {
     box-sizing: border-box;
     font-family: var(--Font-family);
-    max-width: 1200px;
-    /* margin: 0 auto; */
 }
 
 /* ---------------HEADER----------------------- */
@@ -110,7 +108,7 @@ h2{
 
 /************ Hero Image *************/
 .hero {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     position: relative;
 }
 
