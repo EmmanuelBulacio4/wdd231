@@ -113,6 +113,11 @@ header h1{
     margin-bottom: 5px;
     background-color: #b8b3b3;
 }
+
+.w-card img{
+    height: 44px;
+    width: 44px;
+}
 /* ---------------FOOTER-------------------- */
 
 footer{
