@@ -118,10 +118,10 @@ const displaySelected = (members) => {
         level.textContent = `Level: ${member.level}`;
 
         //Agrego los elementos anteriores a la section (line 15)
-        card.appendChild(image);
         card.appendChild(name);
-        card.appendChild(address);
+        card.appendChild(image);
         card.appendChild(phone);
+        card.appendChild(address);
         card.appendChild(website);
         card.appendChild(level);
 

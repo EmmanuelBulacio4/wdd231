@@ -154,7 +154,26 @@ h2{
     width: 44px;
 }
 
-/* ************MEMBERS*********** */
+/* ************RANDOM MEMBERS*********** */
+#spot-members{
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.silvergold{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #b8b3b3;
+}
+
+.silvergold img{
+    width: 100%;
+    height: auto;
+}
 
 /* ---------------FOOTER-------------------- */
 
