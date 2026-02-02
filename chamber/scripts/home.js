@@ -80,31 +80,42 @@ const container = document.querySelector('#spot-members');
 async function getMembers(){
     const response = await fetch('data/members.json');
     const members = await response.json();
-    displayMembers(members.directory);
+    displaySelected(members.directory);
 }
 
-const displayMembers = (members) => {
-    members.forEach(member => {    //hago un forEach para iterar por cada miembro
+const displaySelected = (members) => {
+    let filteredMembers = members.filter(member => member.level>1); //Filtro los miembros para obtener solo los nivel 2 o 3
+
+    let shuffle = filteredMembers.sort(() => Math.random() -0.5); //Desordeno el array de miembros filtrados
+
+    let members23 = shuffle.slice(0, 3)
+    container.innerHTML = "";
+
+
+    members23.forEach(member => {    //hago un forEach para iterar por cada miembro
 
         // Creo los elementos HTML para luego mostrarla en la web
-        let card = document.createElement('section');
-        card.classList.add('member');
+        let card = document.createElement('div');
+        card.classList.add('silvergold');
         let name = document.createElement('h3');
-        let address = document.createElement('p');
-        let phone = document.createElement('p');
-        let website = document.createElement('a');
         let image = document.createElement('img');
+        let phone = document.createElement('p');
+        let address = document.createElement('p');
+        let website = document.createElement('a');
+        let level = document.createElement('p');
 
         //Asigno los valores que tiene cada miembro a las etiquetas anteriores
         name.textContent = `${member.name}`;
-        address.textContent = `${member.addresses}`;
-        phone.textContent = `${member.phone}`;
-        website.textContent = "WebSite";
         image.setAttribute("src", member.image);
         image.setAttribute("alt", "Main image of the member");
         image.setAttribute("loading", "lazy");
-        // image.setAttribute("width", "300");
-        // image.setAttribute("height", "200");
+        image.setAttribute("width", "300");
+        image.setAttribute("height", "200");
+        phone.textContent = `${member.phone}`;
+        address.textContent = `${member.addresses}`;
+        website.textContent = "WebSite";
+        website.setAttribute("href", member.website);
+        level.textContent = `Level: ${member.level}`;
 
         //Agrego los elementos anteriores a la section (line 15)
         card.appendChild(image);
@@ -112,10 +123,11 @@ const displayMembers = (members) => {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        card.appendChild(level);
 
         //Ahora la card la agrego al container que es la variable que tiene el div donde se mostraran los miembros
         container.appendChild(card);
     });
 }
 
-// getMembers();
+getMembers();
