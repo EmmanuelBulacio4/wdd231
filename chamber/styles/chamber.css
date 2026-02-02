@@ -165,13 +165,14 @@ h2{
 .silvergold{
     border: solid 1px black;
     border-radius: 5px;
-    padding: 5px;
+    /* padding: 5px; */
     margin-bottom: 5px;
     background-color: #b8b3b3;
 }
 
 .silvergold img{
     width: 100%;
+    /* max-width: 250px; */
     height: auto;
 }
 
