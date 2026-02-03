@@ -145,7 +145,7 @@ let creditos = courses.reduce((acc, course) => acc + course.credits, 0);
 numCredits.textContent = creditos;
 
 // ----------DIALOG-------------
-const subjects = document.querySelector('#courses'); //Ver linea 126
+// const subjects = document.querySelector('#courses'); //Ver linea 126!!!
 
 const mydialog = document.querySelector('#course-details');
 const subjectName = document.querySelector('#course-details h2');
