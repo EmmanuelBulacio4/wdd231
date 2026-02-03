@@ -1,4 +1,5 @@
 
+// -------------HAM BUTTON-----------
 const navButton = document.querySelector('#nav-btn');
 const navLinks = document.querySelector('#nav-bar');
 
@@ -134,7 +135,7 @@ function createSubjectCard(subjects) {
             <span>${subject.subject}</span>
             <span>${subject.number}</span>
         `;
-
+        card.addEventListener("click", () => showStuff(subject));
         container.appendChild(card);
     });
 }
@@ -143,3 +144,25 @@ const numCredits = document.querySelector('#credits');
 let creditos = courses.reduce((acc, course) => acc + course.credits, 0);
 numCredits.textContent = creditos;
 
+// ----------DIALOG-------------
+const subjects = document.querySelector('#courses'); //Ver linea 126
+
+const mydialog = document.querySelector('#course-details');
+const subjectName = document.querySelector('#course-details h2');
+const titleName = document.querySelector('#course-details h3');
+const creditsSub = document.querySelector('#credits-sub');
+const certificateName = document.querySelector('#description-sub');
+const closeBtn = document.querySelector('#course-details button');
+const subjectInfo = document.querySelector('#course-details p');
+const techSub = document.querySelector('#tech-sub');
+
+closeBtn.addEventListener("click", ()=> mydialog.close());
+
+function showStuff(x) {
+    subjectName.textContent = `${x.subject} ${x.number}`;
+    titleName.textContent = `${x.title}`;
+    creditsSub.textContent = `${x.credits} credists`;
+    certificateName.textContent = `${x.description}`;
+    techSub.textContent = `${x.technology}`;
+    mydialog.showModal()
+}
