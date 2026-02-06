@@ -113,6 +113,16 @@ form{
     .levels{
         background-color: antiquewhite;
     }
+    form > label{
+        display: block;
+        padding-bottom: 10px;
+        /* bussiness description debe renderizarse bien */
+    }
+    form > input{
+        display: block;
+        padding: 5px;
+        width: 50%;
+    }
 
 /* ---------------FOOTER-------------------- */
 
