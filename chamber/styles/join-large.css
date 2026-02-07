@@ -37,13 +37,13 @@
         border-bottom: none;
     }
 
+
     /* --------LAYOUT - JOIN PAGE ------*/
     .layout-join{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;
         padding-bottom: 5px;
-        border: 1px dotted gray;
     }
 
     

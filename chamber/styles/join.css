@@ -101,28 +101,103 @@ header h1 {
     font-size: 2.4rem;
 }
 
+body {
+    font-family: var(--Font-family);
+}
+
 /* ---------------MAIN-------------------- */
 
 /* ---------------JOIN---------------------- */
-form{
-        background-color: antiquewhite;
-        display: block;
-        padding: 5px;
-    }
+form {
+    background-color: antiquewhite;
+    display: block;
+    padding: 20px;
+    border-bottom: 10px;
+}
 
-    .levels{
-        background-color: antiquewhite;
+.levels {
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px;
+}
+
+/* cada etiqueta */
+aside{
+    background-color: #324dd4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 0px;
+    color: white;
+    animation: appearance 1s ease-out 1s 1;
+}
+
+@keyframes appearance{
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
     }
-    form > label{
-        display: block;
-        padding-bottom: 10px;
-        /* bussiness description debe renderizarse bien */
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
-    form > input{
-        display: block;
-        padding: 5px;
-        width: 50%;
-    }
+}
+
+
+aside button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--Secondary-color);
+    color: white;
+}
+
+
+form>label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-weight: bold;
+    /* bussiness description debe renderizarse bien */
+}
+
+form input, textarea, select {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form label:has(input[type="radio"]){
+    flex-direction: row;
+    text-align: left;
+    font-weight: normal;
+    gap: 5px;
+}
+
+form input[type="radio"] {
+    width: auto;           /* No queremos radios de 100% de ancho */
+    margin: 0;
+}
+
+
+
 
 /* ---------------FOOTER-------------------- */
 
