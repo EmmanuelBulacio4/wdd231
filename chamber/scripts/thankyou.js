@@ -11,4 +11,4 @@ const newMember = new URLSearchParams(window.location.search);
 document.querySelector('#message').innerHTML = `
     <p>Application submittion from: ${newMember.get('name')} ${newMember.get('surname')}</p>
     <p>The ${newMember.get('title')} of ${newMember.get('description')}</p>
-`;
+`
