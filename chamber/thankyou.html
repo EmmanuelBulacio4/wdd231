@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <link rel="icon" href="images/icono.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="stylesheet" href="styles/thankyou.css">
-    <script src="scripts/thankyou.js"></script>
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
-<body>
-    <div>
 
-    </div>
+<body>
+    <header>
+        <img class="logo" src="images/icono.png" width="35" height="35" loading="lazy"
+            alt="Logo of the Salta Chamber of Commerce">
+        <h1>Salta Chamber of Commerce</h1>
+        <img class="theme" src="images/dark-light.svg" width="32" height="32" alt="">
+        <button aria-label="Open Menu" id="nav-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="current" href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="message"></div>
+    </main>
+    
+
+    <footer>
+        <div class="info">
+            <p><strong>Salta Chamber of Commerce</strong></p>
+            <p>4674 Salta Av.</p>
+            <p>Salta, Argentina 4440</p>
+            <p>info@saltacc.com</p>
+            <p>(387)4111111</p>
+        </div>
+        <div class="social">
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="YouTube Logo" width="16"
+                    height="16"></a>
+            <a href="https://www.x.com" target="_blank"><img src="images/twitter.svg" alt="Twitter Logo" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/emmanuel-bulacio/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkeIn Logo" width="16" height="16"></a>
+        </div>
+        <div class="course">
+            <p>WDD231 Class Project</p>
+            <p>Emmanuel Bulacio</p>
+            <p>&copy;<span id="currentyear"></span> | Emmanuel Bulacio | Salta, AR</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
+
 </html>
