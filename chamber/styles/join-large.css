@@ -42,11 +42,15 @@
     .layout-join{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 20px;
         gap: 1em;
         padding-bottom: 5px;
     }
 
-    
+    h1{
+        padding-left: 10px;
+    }
+
     /*------FOOTER-------*/
     footer{
         display:flex;

@@ -109,10 +109,11 @@ body {
 
 /* ---------------JOIN---------------------- */
 form {
-    background-color: antiquewhite;
+    background-color: rgb(249, 247, 245);
     display: block;
     padding: 20px;
     border-bottom: 10px;
+    /* border: 1px dotted; */
 }
 
 .levels {
@@ -196,8 +197,17 @@ form input[type="radio"] {
     margin: 0;
 }
 
+dialog div{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(153, 149, 149);
+    align-items: center;
+}
 
-
+dialog button{
+    width: 45px;
+    height: 45px;
+}
 
 /* ---------------FOOTER-------------------- */
 
