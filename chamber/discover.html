@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salta Chamber of Commerce</title>
+    <title>Discover | Salta Chamber of Commerce</title>
     <meta name="description" content="A Salta Argentina Chamber of Commerce | A WDD231 project">
     <meta name="author" content="Emmanuel Bulacio | WDD231 Web Frontend Development I">
     <link rel="icon" href="images/icono.svg">
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber.css">   
     <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <!-- GOOGLE FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +21,22 @@
         rel="stylesheet">
 
     <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Salta Chamber of Commerce">
+    <meta property="og:title" content="Discover | Salta Chamber of Commerce">
     <meta property="og:description" content="an unofficial web site of a chamber of commerce of Salta. ">
-    <meta property="og:image" content="https://emmanuelbulacio4.github.io/wdd231/chamber/chamber-og.jpg">
-    <meta property="og:url" content="https://emmanuelbulacio4.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://emmanuelbulacio4.github.io/wdd231/chamber/images/discover-screenshot.png">
+    <!-- CAMBIAR -->
+    <meta property="og:url" content="https://emmanuelbulacio4.github.io/wdd231/chamber/discover.html">
 
     <!-- SCRIPTS -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
-
 <body>
     <header>
-        <img class="logo" src="images/icono.png" width="35" height="35" loading="lazy" alt="Logo of the Salta Chamber of Commerce">
+        <img class="logo" src="images/icono.png" width="35" height="35" loading="lazy"
+            alt="Logo of the Salta Chamber of Commerce">
         <h1>Salta Chamber of Commerce</h1>
         <img class="theme" src="images/dark-light.svg" width="32" height="32" alt="">
         <button aria-label="Open Menu" id="nav-btn" class="hamburger"></button>
@@ -49,35 +51,7 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" height="350" width="1200" alt="Salta City">
-            <a href="join.html">Join Us</a>
-        </div>
-        <h2>Home</h2>
-        <section id="first">
-            <div id="events" class="w-card">
-                <h3>Events</h3>
-                <p>Sunday 3:00pm: Family games afternoon</p>
-                <p>Monday 10am: New president´s asending</p>
-                <p>Wednesday 8am: New Member registration</p>
-            </div>
-            <div id="current-w" class="w-card">
-                <h3>Weather</h3>
-                <h3 id="town">Weather</h3>
-                <img id="graphic" src="images/w-icon.png" alt="weather icon">
-                <p id="description"></p>
-                <p id="temperature"></p>
-            </div>
-            <div class="w-card">
-                <h3>Forecast</h3>
-                <p id="done"></p><p id="one"></p><br>
-                <p id="dtwo"></p><p id="two"></p><br>
-                <p id="dthree"></p><p id="three"></p><br>
-            </div>
-        </section>
-        <section id="spot-members">
-            
-        </section>
+
     </main>
 
     <footer>
@@ -104,5 +78,4 @@
         </div>
     </footer>
 </body>
-
 </html>
