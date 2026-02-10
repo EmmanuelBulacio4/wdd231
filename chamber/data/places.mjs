@@ -35,25 +35,11 @@ export const places = [
         "image_url": "https://saltarafting.com.ar/wp-content/uploads/2019/05/rafting-salta.jpg"
     },
     {
-        "name": "San Miguel Market",
-        "address": "San Martín Ave. & Florida St., Salta Capital",
-        "cost": "Free entry",
-        "description": "The commercial heart of the city. Perfect for trying street food, buying regional products, or simply getting lost in the local hustle and traditional aromas.",
-        "image_url": "https://saltaciudad.gob.ar/wp-content/uploads/2021/08/mercado-san-miguel.jpg"
-    },
-    {
         "name": "MAAM Museum",
         "address": "Mitre 77, Salta Capital",
         "cost": "$4,000 (Arg. Residents)",
         "description": "Home of the Children of Llullaillaco. A fascinating cultural visit to understand Inca history in the region under an atmosphere of respect and cutting-edge technology.",
         "image_url": "https://www.maam.gob.ar/vistas/images/slide1.jpg"
-    },
-    {
-        "name": "Chita Brewery",
-        "address": "Paseo Güemes, Salta Capital",
-        "cost": "$4,500 (Pint)",
-        "description": "Located in the trendiest gastronomic hub. Offers excellent craft beers and a young atmosphere, ideal for starting the night in Salta's coolest area.",
-        "image_url": "https://lavozdesalta.com.ar/wp-content/uploads/2022/10/cerveceria.jpg"
     },
     {
         "name": "Peña La Balcarce",

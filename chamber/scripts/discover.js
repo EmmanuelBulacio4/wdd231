@@ -1,9 +1,6 @@
 import { places } from "../data/places.mjs";
 
-// Aqui van las variables para las tarjetas
 const container = document.getElementById('container');
-
-displayPlaces(places);
 
 function displayPlaces(file){
     file.forEach(x => {
@@ -15,15 +12,38 @@ function displayPlaces(file){
         imageM.setAttribute('alt',x.name)
         card.appendChild(imageM)
 
-        let nameM = document.createElement('h2');
+        let nameM = document.createElement('h3');
         nameM.textContent = x.name;
         card.appendChild(nameM);
 
         let addressM = document.createElement('address');
-        let descriptionM = document.createElement('p');
-        let buttonInfo = document.createElement('button');
+        addressM.textContent = x.address;
+        card.appendChild(addressM);
 
+        let descriptionM = document.createElement('p');
+        descriptionM.textContent = x.description;
+        card.appendChild(descriptionM);
+
+        let buttonInfo = document.createElement('button');
+        buttonInfo.textContent = "More Info";
+        card.appendChild(buttonInfo);
 
         container.appendChild(card)
     });
+};
+
+displayPlaces(places);
+
+
+const message = document.getElementById(toUsermsg);
+
+const dataOnLS = localStorage.getItem('lastVisit');
+
+if (dataOnLS == null){
+    localStorage.setItem('lastVisit', Date.now());
+    message.innerText = "We´re glad to see you";
+}
+else{
+    let diference = lastVisit - Date.now()/86400000;
+
 }
