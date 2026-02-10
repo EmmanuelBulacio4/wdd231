@@ -33,17 +33,3 @@ function displayPlaces(file){
 };
 
 displayPlaces(places);
-
-
-const message = document.getElementById(toUsermsg);
-
-const dataOnLS = localStorage.getItem('lastVisit');
-
-if (dataOnLS == null){
-    localStorage.setItem('lastVisit', Date.now());
-    message.innerText = "We´re glad to see you";
-}
-else{
-    let diference = lastVisit - Date.now()/86400000;
-
-}
