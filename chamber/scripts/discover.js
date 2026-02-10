@@ -10,6 +10,7 @@ function displayPlaces(file){
         let imageM = document.createElement('img')
         imageM.setAttribute('src', `${x.image_url}`)
         imageM.setAttribute('alt',x.name)
+        imageM.setAttribute('loading', 'lazy')
         card.appendChild(imageM)
 
         let nameM = document.createElement('h3');

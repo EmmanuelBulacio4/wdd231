@@ -10,6 +10,7 @@ if (dataOnLS === null) {
 } else {
     const lastVisit = Number(dataOnLS);
 
+    
     const msPerDay = 1000*60*60*24;
 
     const difference = Math.floor((now - lastVisit) / msPerDay);
@@ -22,6 +23,5 @@ if (dataOnLS === null) {
         message.textContent = `You were here ${difference} days ago.`;
     }
 
-    // Actualizamos la última visita
     localStorage.setItem('lastVisit', now);
 }
