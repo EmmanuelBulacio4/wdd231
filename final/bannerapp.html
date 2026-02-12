@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner App</title>
+    <meta name="description"
+        content="A web Page for teachers. Write a phrase and get ne number of letters you need to your banner!">
+    <meta name="author" content="WDD131 | Emmanuel Bulacio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/banner.css">
+    <script src="scripts/banner.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50">
+        <h1>School Classroom Site</h1>
+    </header>
+    <main>
+        <img src="images/free-sponsor.webp" alt="space to sponsor" class="sponsor" loading="lazy">
+        <div class="application">
+            <h2>Banner App</h2>
+            <label for="userInput">Write/Paste the phrase: </label>
+            <textarea name="input" id="userInput"></textarea>
+            <button class="appButton">Count Letters</button>
+            <ul id="list"></ul>
+        </div>
+        <div>
+            <form method="get" action="opinion.html" class="wf1">
+                <h2>Rate the app</h2>
+                <fieldset>
+                    <legend>Overall Rating <span class="asteric">*</span></legend>
+                    <label><input type="radio" name="punctuation" value="five" required>⭐⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="four">⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="three">⭐⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="two">⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="one">⭐</label>
+                </fieldset>
+                <fieldset>
+                    <label>Written Review (Optional)
+                        <textarea name="wreview" id="written"></textarea>
+                    </label>
+                    <label>Your Name(Optional)<input type="text" placeholder="Your Name"></label>
+                </fieldset>
+                <input type="submit" value="Give my opinion">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

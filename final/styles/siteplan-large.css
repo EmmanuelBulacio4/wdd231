@@ -1,0 +1,60 @@
+:root {
+    --main-color: #4A90E2;
+    --main-background-color: #FFFFFF;
+    --second-background-color: #f4f6f8;
+    --main-font-color: black;
+    --second-font-color: white;
+    --main-font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 640px) {
+    #hamburger {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    #chrono {
+        grid-column: 2/3;
+
+    }
+
+    #portal {
+        grid-column: 2/3;
+    }
+
+    .lists ul, .lists h3 {
+    display: block;
+    color: var(--main-font-color);
+}
+
+    .lists {
+        display: block;
+        grid-column: 1/2;
+        background-color: var(--second-background-color);
+        border-radius: 10px;
+        padding: 1rem;
+        justify-items: left;
+        color: var(--second-font-color);
+    }
+
+    .hero {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--main-font-color);
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+}

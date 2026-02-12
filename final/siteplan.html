@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Site</title>
+    <meta name="description"
+        content="A web Page for parents. They can access to chronogram o classes and see assignments.">
+    <meta name="author" content="WDD131 | Emmanuel Bulacio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50">
+        <h1>School Classroom Site</h1>
+        <button title="Menu button" id="hamburger"></button>
+    </header>
+    <section class="site-sec">
+        <h2>Welcome to the School Classroom Site</h2>
+        <p>The site is aimed to parents and students who need to check assignments. 
+            You will be able to see homework and contact to your teacher through whatsapp button. If you need help from a tutor contact one clicking <strong><a href="">here</a></strong>.</p>
+            <!-- On the other hand, teachers will access to teachers books and special aplication they need to prepare banners.  -->
+        <!-- <p>Parents: Have you ever wanted to check your child assignments so you could be aware about your child progress? This pageg shows the units and homework.</p>
+        <p>Teachers: Do you spend many time counting letters to prepare a banner? Use our app on Teacher section. Besides, find the teachers´ books you need to every class.</p> -->
+        <!-- <p>Color Schema:<br>#4A90E2 (principal)Nav, buttons<br>#FFFFFF Main Background color<br>#F4F6F8 secundaries backgrounds</p>
+        <p>Typography: "Open Sans" (h1, h2, h3, form)
+        </p> -->
+    </section>
+    <main class="viewer">
+        <div class="lists">
+            <ul id="classes">
+                <li class="subt">Clases</li>
+                <li><a class="Seventh" href="#">Class 7</a> (coming soon)</li>
+                <li><a class="Sixth" href="#">Class 6</a> (coming soon)</li>
+                <li><a class="Fifth" href="#">Class 5</a></li>
+                <li><a class="Fourth" href="#">Class 4</a></li>
+                <li><a class="Third" href="#">Class 3</a> (coming soon)</li>
+                <li><a class="Second" href="#">Class 2</a> (coming soon)</li>
+                <li><a class="First" href="#">Class 1</a> (coming soon)</li>
+            </ul>
+            <ul>
+                <li class="subt">Teachers</li>
+                <li><a id="subtitle" href="teachersite.html" target="_blank">Teachers Site</a></li>
+                <li><a href="bannerapp.html" target="_blank">Banner App</a></li>
+            </ul>
+        </div>
+        <img class="hero" src="images/default500x1000.jpg" alt="a little dog inviting to choose the class" width="250">
+        <div id="chrono"></div>
+    </main>
+    <!-- <section>
+        <h3>Wireframes</h3>
+        <figure>
+            <img src="images/site-wireframe.jpg" alt="">
+            <figcaption>Landscape View</figcaption>
+        </figure>
+        <figure>
+            <img src="images/mobile-wireframe.jpg" alt="">
+            <figcaption>Portrait View</figcaption>
+        </figure>
+    </section> -->
+    <footer>
+        <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

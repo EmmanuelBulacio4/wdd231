@@ -1,0 +1,128 @@
+:root {
+    --main-color: #4A90E2;
+    --main-background-color: #FFFFFF;
+    --second-background-color: #f4f6f8;
+    --main-font-color: black;
+    --second-font-color: white;
+    --main-font-family: "Open Sans", sans-serif;
+}
+
+body {
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--main-font-family);
+}
+
+.subt{
+    text-decoration: underline;
+    font-family: var(--main-font-family);
+    background-color: var(--main-color);
+    border-radius: 4px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--second-font-color);
+}
+
+#hamburger::before {
+    /*Marco el comportamiento antes del evento */
+    content: "☰";
+}
+
+#hamburger.open::before {
+    /*Marco el comportamiento despues del evento */
+    content: "X";
+    /*Con la regla "content: ;" agrego el elemento nuevo */
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+}
+
+/* Menu in hamburguer button */
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hero{
+    display: none;
+}
+
+.lists ul, .lists h3 {
+    display: none;
+}
+
+.lists li, .lists h3 {
+    text-align: center;
+    display: block;
+    color: var(--color2);
+    margin: 1rem auto 0 auto;
+    font-family: "Parkisans";
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lists.open ul {
+    display: block;
+    padding: 15px;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    padding-bottom: 1rem;
+}
+
+thead th{
+    border: 1px solid black;
+    background-color: var(--main-color);
+    color: var(--second-font-color);
+    padding: 1rem;
+}
+
+th, td{
+    padding: 0.5rem;
+    border: 1px solid;
+    text-align: center;
+}
+
+tbody tr:nth-last-child(even){
+    background-color: var(--second-background-color);
+}
+
+tbody tr:nth-child(odd){
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.support{
+    color: var(--main-font-family);
+    text-decoration: underline;
+}
