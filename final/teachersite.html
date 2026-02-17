@@ -30,15 +30,20 @@
 </head>
 <body>
     <header>
-        <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50">
+        <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50" height="50">
         <h1>School Classroom Site</h1>
         <button aria-label="Menu Button" id="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="teachersite.html">Teachers</a></li>
+                <li><a href="bannerapp.html">Banner</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Teacher Site</h2>
-        <p>The site is aimed to teachers who need to check teacehrs books and be prepare to their classes.</p>
-    </section>
+
     <main class="viewer">
+        <h2>Teacher Site</h2>
         <div class="lists">
             <ul id="classes">
                 <li class="subt">Clases</li>
@@ -50,12 +55,12 @@
                 <li><a class="room2" href="#">Class 2</a> (coming soon)</li>
                 <li><a class="room1" href="#">Class 1</a> (coming soon)</li>
             </ul>
-            <ul>
+            <!-- <ul>
                 <li class="subt">Teachers</li>
                 <li><a id="subtitle" href="teachersite.html">Teachers Site (You are here!)</a></li>
                 <li><a href="siteplan.html">Student Portal</a></li>
                 <li><a href="bannerapp.html" target="_blank">Banner App</a></li>
-            </ul>
+            </ul> -->
         </div>
         <img class="hero" src="images/default500x1000.jpg" alt="a little dog inviting to choose the class" width="250">
         <div id="portal"></div>

@@ -82,8 +82,12 @@ header h1{
     color: var(--second-background-color);
 }
 
-navigation a:hover{
+.navigation a:hover{
     text-decoration: underline;
+}
+
+.navigation li:last-child {
+    border-bottom: none;
 }
 
 .hero{

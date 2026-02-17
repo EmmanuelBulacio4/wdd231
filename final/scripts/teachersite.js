@@ -7,7 +7,7 @@ document.getElementById("lastModified").textContent = lastModification.toLocaleD
 
 //hamburguer button
 const burgerButton = document.querySelector('#hamburger');
-const navigation = document.querySelector('.lists');
+const navigation = document.querySelector('.navigation');
 
 burgerButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
