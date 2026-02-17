@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project | Emmanuel Bulacio | WDD231 Web Frontend Development I</title>
-    <meta name="description" content="A web Page for parents. They can access to chronogram o classes and see assignments.">
+    <meta name="description"
+        content="A web Page for parents. They can access to chronogram o classes and see assignments.">
     <meta name="author" content="WDD131 | Emmanuel Bulacio">
-    <link rel="icon" href="images/icono.svg">
+    <link rel="icon" href="images/fav-icon.png">
 
     <!-- GOOGLE FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,31 +22,33 @@
 
     <!-- OPEN GRAPH -->
     <meta property="og:title" content="School Classroom Site">
-    <meta property="og:description" content="A web aimed to parents and teachers. It helps both to follow up assignments and get guide from tutors.">
+    <meta property="og:description"
+        content="A web aimed to parents and teachers. It helps both to follow up assignments and get guide from tutors.">
     <meta property="og:image" content="https://emmanuelbulacio4.github.io/wdd231/final/final-index-og.jpg">
     <meta property="og:url" content="https://emmanuelbulacio4.github.io/wdd231/final/index.html">
 
     <!-- SCRIPTS -->
     <script src="scripts/siteplan.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50">
+        <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50" height="50">
         <h1>School Classroom Site</h1>
-        <button title="Menu button" id="hamburger"></button>
+        <button aria-label="Menu Button" id="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="teachersite.html">Teachers</a></li>
+                <li><a href="bannerapp.html">Banner</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="site-sec">
-        <h2>Welcome to the School Classroom Site</h2>
-        <p>The site is aimed to parents and students who need to check assignments. 
-            You will be able to see homework and contact to your teacher through whatsapp button. If you need help from a tutor contact one clicking <strong><a href="">here</a></strong>.</p>
-            <!-- On the other hand, teachers will access to teachers books and special aplication they need to prepare banners.  -->
-        <!-- <p>Parents: Have you ever wanted to check your child assignments so you could be aware about your child progress? This pageg shows the units and homework.</p>
-        <p>Teachers: Do you spend many time counting letters to prepare a banner? Use our app on Teacher section. Besides, find the teachers´ books you need to every class.</p> -->
-        <!-- <p>Color Schema:<br>#4A90E2 (principal)Nav, buttons<br>#FFFFFF Main Background color<br>#F4F6F8 secundaries backgrounds</p>
-        <p>Typography: "Open Sans" (h1, h2, h3, form)
-        </p> -->
-    </section>
+
     <main class="viewer">
+        <section class="site-sec">
+            <h2>Welcome to the School Classroom Site</h2>
+        </section>
         <div class="lists">
             <ul id="classes">
                 <li class="subt">Clases</li>
@@ -57,29 +60,15 @@
                 <li><a class="Second" href="#">Class 2</a> (coming soon)</li>
                 <li><a class="First" href="#">Class 1</a> (coming soon)</li>
             </ul>
-            <ul>
-                <li class="subt">Teachers</li>
-                <li><a id="subtitle" href="teachersite.html" target="_blank">Teachers Site</a></li>
-                <li><a href="bannerapp.html" target="_blank">Banner App</a></li>
-            </ul>
         </div>
         <img class="hero" src="images/default500x1000.jpg" alt="a little dog inviting to choose the class" width="250">
         <div id="chrono"></div>
     </main>
-    <!-- <section>
-        <h3>Wireframes</h3>
-        <figure>
-            <img src="images/site-wireframe.jpg" alt="">
-            <figcaption>Landscape View</figcaption>
-        </figure>
-        <figure>
-            <img src="images/mobile-wireframe.jpg" alt="">
-            <figcaption>Portrait View</figcaption>
-        </figure>
-    </section> -->
+
     <footer>
         <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>

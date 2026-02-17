@@ -1,13 +1,6 @@
-//Date to the footer
-const today = new Date();
-const year = today.getFullYear();
-document.querySelector("#currentyear").textContent = year;
-let lastModification = new Date(document.lastModified)
-document.getElementById("lastModified").textContent = lastModification.toLocaleDateString("en-US");
-
 //hamburguer button
 const burgerButton = document.querySelector('#hamburger');
-const navigation = document.querySelector('.lists');
+const navigation = document.querySelector('#nav-bar');
 
 burgerButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -380,3 +373,11 @@ const election5 = document.querySelector(".Fifth")
 election5.addEventListener("click", () => {
     tableShown.innerHTML = stuTable[1].fifthStu;
 });
+
+
+//-----DATE------
+const today = new Date();
+const year = today.getFullYear();
+document.querySelector("#currentyear").textContent = year;
+let lastModification = new Date(document.lastModified)
+document.getElementById("lastModified").textContent = lastModification.toLocaleDateString("en-US");

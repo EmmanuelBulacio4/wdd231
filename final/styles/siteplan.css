@@ -7,16 +7,104 @@
     --main-font-family: "Open Sans", sans-serif;
 }
 
-body {
-    padding: 1rem;
-    margin: 0 auto;
-    background-color: var(--main-background-color);
+/* ---------HEADER--------- */
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--second-font-color);
 }
 
-h1,
-h2,
-h3 {
+header img{
+    grid-column: 1/2;
+    padding-left: 5px;
+}
+
+header h1{
+    grid-column: 2/3;
+    margin-left: 10px;
     font-family: var(--main-font-family);
+}
+
+/* ---------HAMBURGUER BUTTON--------- */
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
+#hamburger {
+    grid-column: 3/4;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+}
+
+/* --------NAVIGATION--------- */
+.navigation{
+    display: none;
+}
+
+.navigation.open{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    width: 100%;
+    padding: 0;
+}
+
+.navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    animation: appearance 1s ease-out;
+}
+
+@keyframes appearance {
+    0%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}
+
+.navigation li{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--second-background-color);
+}
+
+navigation a:hover{
+    text-decoration: underline;
+}
+
+.hero{
+    display: none;
+}
+
+/* ---------MAIN--------- */
+
+.lists li, .lists h3 {
+    display: flex;
+    color: var(--color2);
+    margin: 1rem auto 0 auto;
+    font-family: "Parkisans";
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+h2{
+    font-family: var(--main-font-family);
+    padding-left: 5px;
 }
 
 .subt{
@@ -26,65 +114,6 @@ h3 {
     border-radius: 4px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-color);
-    color: var(--second-font-color);
-}
-
-#hamburger::before {
-    /*Marco el comportamiento antes del evento */
-    content: "☰";
-}
-
-#hamburger.open::before {
-    /*Marco el comportamiento despues del evento */
-    content: "X";
-    /*Con la regla "content: ;" agrego el elemento nuevo */
-}
-
-#hamburger {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    position: absolute;
-    top: 2.5rem;
-    right: 1.5rem;
-}
-
-/* Menu in hamburguer button */
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-.hero{
-    display: none;
-}
-
-.lists ul, .lists h3 {
-    display: none;
-}
-
-.lists li, .lists h3 {
-    text-align: center;
-    display: block;
-    color: var(--color2);
-    margin: 1rem auto 0 auto;
-    font-family: "Parkisans";
-    font-weight: 300;
-    font-style: normal;
-}
-
-.lists.open ul {
-    display: block;
-    padding: 15px;
-}
 
 table{
     margin: 0 auto;
@@ -112,6 +141,8 @@ tbody tr:nth-last-child(even){
 tbody tr:nth-child(odd){
     font-weight: bold;
 }
+
+
 
 footer {
     background-color: var(--main-color);
