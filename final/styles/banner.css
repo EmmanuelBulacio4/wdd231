@@ -103,6 +103,11 @@ h1{
     text-align: center;
     font-size: 1.5rem;
 }
+
+.appButton:hover{
+    transform: translateY(-3px);
+}
+
 /* --------Form-------- */
 .wf1 {
     background-color: rgb(149, 204, 252);
@@ -153,10 +158,14 @@ h1{
     font-weight: 500;
 }
 
-footer {
+input[type='submit']:hover{
+    transform: translateY(-3px);
+}
+
+/* footer {
     background-color: var(--main-color);
     padding: 2rem;
     margin-top: 1rem;
     text-align: center;
     font-family: var(--main-font-family);
-}
+} */
