@@ -1,26 +1,17 @@
-:root {
-    --main-color: #4A90E2;
-    --main-background-color: #FFFFFF;
-    --second-background-color: #f4f6f8;
-    --main-font-color: black;
-    --second-font-color: white;
-    --main-font-family: "Open Sans", sans-serif;
-}
-
 body {
     margin: 0 auto;
     background-color: var(--main-background-color);
     max-width: 640px;
 }
 
-header {
+/* header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
     color: var(--second-font-color);
     border-bottom: 2px dotted;
-}
+} */
 
 header button{
     display: none;
