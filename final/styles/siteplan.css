@@ -146,18 +146,53 @@ tbody tr:nth-child(odd){
     font-weight: bold;
 }
 
-
-
+/* ---------FOOTER---------- */
 footer {
+    display: block;
     background-color: var(--main-color);
     padding: 2rem;
     text-align: center;
     font-family: var(--main-font-family);
+    color: var(--main-background-color);
     font-weight: bold;
     margin-top: 1rem;
 }
 
-.support{
-    color: var(--main-font-family);
-    text-decoration: underline;
+.info {
+    padding-left: 5px;
+    padding-top: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 8px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    transform: translateY(-7px);
+}
+
+.course {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
