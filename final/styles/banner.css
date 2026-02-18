@@ -10,6 +10,7 @@
 body {
     margin: 0 auto;
     background-color: var(--main-background-color);
+    max-width: 640px;
 }
 
 header {
@@ -32,8 +33,9 @@ main{
 }
 
 .sponsor{
-    width: 100%;
-    max-height: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .application{
@@ -49,8 +51,10 @@ main{
 .application textarea{
     display: block;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 5px;
+    padding-bottom: 3rem;
     text-align: start;
+    width: 60%;
 }
 
 .application button{
@@ -61,12 +65,15 @@ main{
     color: var(--main-background-color);
     font-weight: bold;
     border-radius: 5px;
+    width: 40%;
 }
 
 ul{
     background-color: var(--second-background-color);
     columns: 3;
     column-width: auto;
+    border: 2px solid blue;
+    border-radius: 10px;
 }
 
 li{

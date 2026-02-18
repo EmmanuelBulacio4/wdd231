@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     listItem.appendChild(li);
                 }
             } else {
-                alert("Write or paste a phrase.");
+                alert("Write or paste a phrase.");   //AQUI PODRIA IR UN MODAL!!!!
             }
         });
     }
