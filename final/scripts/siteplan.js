@@ -376,20 +376,20 @@ election5.addEventListener("click", () => {
 
 
 // //-----DIALOG-----
-// const modal = document.getElementById('coming-soon');
-// const closeDialog = document.getElementById('closeModal');
-// const openDialog = document.querySelectorAll('.not-yet');
+const modal = document.getElementById('coming-soon');
+const closeDialog = document.getElementById('closeModal');
+const openDialog = document.querySelectorAll('.not-yet');
 
-// openDialog.forEach(link =>{
-//     link.addEventListener('click', (event)=>{
-//         event.preventDefault();
-//         modal.showModal();
-//     })
-// })
+openDialog.forEach(link =>{
+    link.addEventListener('click', (event)=>{
+        event.preventDefault();
+        modal.showModal();
+    })
+})
 
-// closeDialog.addEventListener('click', ()=>{
-//     modal.close();
-// });
+closeDialog.addEventListener('click', ()=>{
+    modal.close();
+});
 
 
 //-----DATE------
