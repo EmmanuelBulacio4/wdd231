@@ -22,7 +22,7 @@ const stuTable = [
     </thead>
     <tbody>
         <tr>
-            <td rowspan="5">Unidad 1</td>
+            <td rowspan="5">Unit 1</td>
             <td>Lección 1</td>
             <td>4 - 6</td>
             <td>66 - 69</td>
@@ -48,7 +48,7 @@ const stuTable = [
             <td>70</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 2</td>
+            <td rowspan="5">Unit 2</td>
             <td>Lección 1</td>
             <td>14 – 16</td>
             <td>71</td>
@@ -74,7 +74,7 @@ const stuTable = [
             <td>-</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 3</td>
+            <td rowspan="5">Unit 3</td>
             <td>Lección 1</td>
             <td>24 – 26</td>
             <td>76</td>
@@ -100,7 +100,7 @@ const stuTable = [
             <td>80</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 4</td>
+            <td rowspan="5">Unit 4</td>
             <td>Lección 1</td>
             <td>34 – 36</td>
             <td>81</td>
@@ -126,7 +126,7 @@ const stuTable = [
             <td>85</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 5</td>
+            <td rowspan="5">Unit 5</td>
             <td>Lección 1</td>
             <td>44 – 46</td>
             <td>86</td>
@@ -152,7 +152,7 @@ const stuTable = [
             <td>90</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 6</td>
+            <td rowspan="5">Unit 6</td>
             <td>Lección 1</td>
             <td>54 – 56</td>
             <td>91</td>
@@ -194,13 +194,13 @@ const stuTable = [
     </thead>
     <tbody>
         <tr>
-            <td>Diagnóstico</td>
+            <td>Unit 0</td>
             <td>-</td>
             <td>4 – 7</td>
             <td>70 – 71</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 1</td>
+            <td rowspan="5">Unit 1</td>
             <td>Lección 1</td>
             <td>8 – 10</td>
             <td>72</td>
@@ -226,7 +226,7 @@ const stuTable = [
             <td>-</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 2</td>
+            <td rowspan="5">Unit 2</td>
             <td>Lección 1</td>
             <td>18 – 20</td>
             <td>77</td>
@@ -252,7 +252,7 @@ const stuTable = [
             <td>81</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 3</td>
+            <td rowspan="5">Unit 3</td>
             <td>Lección 1</td>
             <td>28 – 30</td>
             <td>82</td>
@@ -278,7 +278,7 @@ const stuTable = [
             <td>86</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 4</td>
+            <td rowspan="5">Unit 4</td>
             <td>Lección 1</td>
             <td>38 – 40</td>
             <td>87</td>
@@ -304,7 +304,7 @@ const stuTable = [
             <td>90 – 91</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 5</td>
+            <td rowspan="5">Unit 5</td>
             <td>Lección 1</td>
             <td>48 – 50</td>
             <td>92</td>
@@ -330,7 +330,7 @@ const stuTable = [
             <td>96</td>
         </tr>
         <tr>
-            <td rowspan="5">Unidad 6</td>
+            <td rowspan="5">Unit 6</td>
             <td>Lección 1</td>
             <td>58 – 60</td>
             <td>97</td>
