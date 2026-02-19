@@ -235,7 +235,7 @@ const teacherTable = [
             </thead>
             <tbody>
                 <tr>
-                    <td>Diagnóstico</td>
+                    <td>Diag</td>
                     <td>-</td>
                     <td>4 – 7</td>
                     <td>15 – 16</td>
