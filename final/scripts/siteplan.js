@@ -375,6 +375,23 @@ election5.addEventListener("click", () => {
 });
 
 
+// //-----DIALOG-----
+// const modal = document.getElementById('coming-soon');
+// const closeDialog = document.getElementById('closeModal');
+// const openDialog = document.querySelectorAll('.not-yet');
+
+// openDialog.forEach(link =>{
+//     link.addEventListener('click', (event)=>{
+//         event.preventDefault();
+//         modal.showModal();
+//     })
+// })
+
+// closeDialog.addEventListener('click', ()=>{
+//     modal.close();
+// });
+
+
 //-----DATE------
 const today = new Date();
 const year = today.getFullYear();

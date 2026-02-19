@@ -146,6 +146,21 @@ tbody tr:nth-child(odd){
     font-weight: bold;
 }
 
+/* ----------MODAL---------- */
+dialog{
+    width: 400px;
+    height: 300px;
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+}
+
+::backdrop{
+    background-color:  rgb(0 0 0 / 50%);
+}
+
 /* ---------FOOTER---------- */
 footer {
     display: block;
