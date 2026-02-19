@@ -222,7 +222,7 @@ const teacherTable = [
     },
     {
         fifth: `
-        <h2>Class 5th - Student
+        <h2>Class 5th - Student</h2>
         <table>
             <thead>
                 <tr>
