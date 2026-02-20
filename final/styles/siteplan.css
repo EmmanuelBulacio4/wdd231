@@ -1,222 +1,226 @@
 :root {
-    --main-color: #4A90E2;
-    --main-background-color: #FFFFFF;
+    --main-color: #4a90e2;
+    --main-background-color: #fff;
     --second-background-color: #f4f6f8;
-    --main-font-color: black;
-    --second-font-color: white;
-    --main-font-family: "Open Sans", sans-serif;
+    --main-font-color: #000;
+    --second-font-color: #fff;
+    --main-font-family: "Open Sans", sans-serif
 }
-
-/* ---------HEADER--------- */
 
 header {
     display: grid;
     grid-template-columns: 50px auto 50px;
     align-items: center;
     background-color: var(--main-color);
-    color: var(--second-font-color);
+    color: var(--second-font-color)
 }
 
-header img{
+header img {
     grid-column: 1/2;
-    padding-left: 5px;
+    padding-left: 5px
 }
 
-header h1{
+header h1 {
     grid-column: 2/3;
     margin-left: 10px;
-    font-family: var(--main-font-family);
+    font-family: var(--main-font-family)
 }
 
-/* ---------HAMBURGUER BUTTON--------- */
-#hamburger::before {
-    content: "☰";
+#hamburger:before {
+    content: "☰"
 }
 
-#hamburger.open::before {
-    content: "X";
+#hamburger.open:before {
+    content: "X"
 }
 
 #hamburger {
     grid-column: 3/4;
     font-size: 2rem;
     border: 0;
-    background: none;
+    background: none
 }
 
-/* --------NAVIGATION--------- */
-.navigation{
-    display: none;
+.navigation {
+    display: none
 }
 
-.navigation.open{
+.navigation.open {
     display: flex;
     flex-direction: column;
     grid-column: 1/4;
     width: 100%;
-    padding: 0;
+    padding: 0
 }
 
-.navigation ul{
+.navigation ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 100%;
-    animation: appearance 1s ease-out;
+    animation: appearance 1s ease-out
 }
 
 @keyframes appearance {
-    0%{transform: translateY(-10px);}
-    100%{transform: translateY(0px);}
+    0% {
+        transform: translateY(-10px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
 }
 
-.navigation li{
+.navigation li {
     text-align: center;
     padding: 5px;
     font-size: 1.5rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff
 }
 
-.navigation a{
+.navigation a {
     text-decoration: none;
-    color: var(--second-background-color);
+    color: var(--second-background-color)
 }
 
-.navigation a:hover{
-    text-decoration: underline;
+.navigation a:hover {
+    text-decoration: underline
 }
 
 .navigation li:last-child {
-    border-bottom: none;
+    border-bottom: none
 }
 
-.hero{
-    display: none;
+.hero {
+    display: none
 }
 
-/* ---------MAIN--------- */
-
-.lists li, .lists h3 {
+.lists h3,
+.lists li {
     display: flex;
     color: var(--color2);
-    margin: 1rem auto 0 auto;
-    font-family: "Parkisans";
+    margin: 1rem auto 0;
+    font-family: Parkisans;
     font-weight: 300;
-    font-style: normal;
+    font-style: normal
 }
 
-
-h2{
-    font-family: var(--main-font-family);
-    padding-left: 5px;
+h2 {
+    padding-left: 5px
 }
 
-.subt{
+.subt,
+h2 {
+    font-family: var(--main-font-family)
+}
+
+.subt {
     text-decoration: underline;
-    font-family: var(--main-font-family);
     background-color: var(--main-color);
-    border-radius: 4px;
+    border-radius: 4px
 }
 
-
-table{
+table {
     margin: 0 auto;
     border-collapse: collapse;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem
 }
 
-thead th{
-    border: 1px solid black;
+thead th {
+    border: 1px solid #000;
     background-color: var(--main-color);
     color: var(--second-font-color);
-    padding: 1rem;
+    padding: 1rem
 }
 
-th, td{
-    padding: 0.5rem;
+td,
+th {
+    padding: .5rem;
     border: 1px solid;
-    text-align: center;
+    text-align: center
 }
 
-tbody tr:nth-last-child(even){
-    background-color: var(--second-background-color);
+tbody tr:nth-last-child(2n) {
+    background-color: var(--second-background-color)
 }
 
-tbody tr:nth-child(odd){
-    font-weight: bold;
+tbody tr:nth-child(odd) {
+    font-weight: 700
 }
 
-/* ----------MODAL---------- */
-dialog{
+dialog {
     width: 300px;
     height: 150px;
-    background-color: rgb(221, 211, 211);
-    border: 1px solid black;
+    background-color: #ddd3d3;
+    border: 1px solid #000;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     padding: 20px;
-    text-align: center;
+    text-align: center
 }
 
-::backdrop{
-    background-color:  rgb(0 0 0 / 50%);
+::backdrop {
+    background-color: rgba(0, 0, 0, .5)
 }
 
-dialog button{
+dialog button {
     padding: 5px;
-    background-color: var(--main-color);
     color: var(--second-background-color);
     font-weight: 400;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
-/* ---------FOOTER---------- */
+dialog button,
+footer {
+    background-color: var(--main-color)
+}
+
 footer {
     display: block;
-    background-color: var(--main-color);
     padding: 2rem;
     text-align: center;
     font-family: var(--main-font-family);
     color: var(--main-background-color);
-    font-weight: bold;
-    margin-top: 1rem;
+    font-weight: 700;
+    margin-top: 1rem
 }
 
 .info {
     padding-left: 5px;
-    padding-top: 1rem;
+    padding-top: 1rem
 }
 
 .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     column-gap: 8px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }
 
+.social,
 .social a {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
+}
+
+.social a {
     width: 44px;
     height: 44px;
-    border: #ccc solid 1px;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px
 }
 
 .social img {
     width: 22px;
-    height: 22px;
+    height: 22px
 }
 
 .social a:hover {
-    transform: translateY(-7px);
+    transform: translateY(-7px)
 }
 
 .course {
     padding-left: 5px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }

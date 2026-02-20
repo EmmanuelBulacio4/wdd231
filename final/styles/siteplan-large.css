@@ -1,55 +1,51 @@
-@media screen and (min-width: 640px) {
-    /* -----HEADER----- */
-    header{
+@media screen and (min-width:640px) {
+    header {
         display: grid;
         grid-template-columns: 60px auto auto;
-        padding: 1.25rem;
+        padding: 1.25rem
     }
 
-    .navigation{
+    .navigation {
         display: flex;
-        grid-column: 3/4;
+        grid-column: 3/4
     }
 
-    .navigation ul{
+    .navigation ul {
         display: flex;
         flex-direction: row;
         margin: 0;
         padding: 0;
         animation: none;
         justify-content: end;
-        gap: 1rem;
+        gap: 1rem
     }
 
-    .navigation li{
+    .navigation li {
         border-bottom: none;
-        grid-column: 2/4;
+        grid-column: 2/4
     }
-    
+
     #hamburger {
-        display: none;
+        display: none
     }
 
     main {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 2rem;
-        padding: 1rem;
+        padding: 1rem
     }
 
-    #chrono {
-        grid-column: 2/3;
-
-    }
-
+    #chrono,
     #portal {
-        grid-column: 2/3;
+        grid-column: 2/3
     }
 
-    .lists ul, .lists h3 {
-    display: block;
-    color: var(--main-font-color);
-}
+    .lists h3,
+    .lists ul {
+        display: block;
+        color: var(--main-font-color)
+    }
 
     .lists {
         display: block;
@@ -58,21 +54,21 @@
         border-radius: 10px;
         padding: 1rem;
         justify-items: left;
-        color: var(--second-font-color);
+        color: var(--second-font-color)
     }
 
     .hero {
         margin-left: auto;
         margin-right: auto;
-        border-radius: 50%;
+        border-radius: 50%
     }
 
     li a {
         text-decoration: none;
-        color: var(--main-font-color);
+        color: var(--main-font-color)
     }
 
     li a:hover {
-        text-decoration: underline;
+        text-decoration: underline
     }
 }
