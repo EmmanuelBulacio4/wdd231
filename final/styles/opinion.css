@@ -26,33 +26,12 @@ header h1 {
     font-family: var(--main-font-family)
 }
 
-.hero {
-    display: none
-}
-
-.lists h3,
-.lists li {
-    display: flex;
-    color: var(--color2);
-    margin: 1rem auto 0;
-    font-family: Parkisans;
-    font-weight: 300;
-    font-style: normal
-}
-
-h2 {
-    padding-left: 5px
-}
-
-.subt,
-h2 {
-    font-family: var(--main-font-family)
-}
-
-.subt {
-    text-decoration: underline;
-    background-color: var(--main-color);
-    border-radius: 4px
+.review-notice{
+    background-color: rgb(224, 188, 188);
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 footer {
