@@ -1,3 +1,6 @@
+import { displayDates } from "./date.mjs";
+displayDates();
+
 //hamburguer button
 const burgerButton = document.querySelector('#hamburger');
 const navigation = document.querySelector('#nav-bar');
@@ -391,10 +394,38 @@ closeDialog.addEventListener('click', ()=>{
     modal.close();
 });
 
+// ------WEATHER-----
+const saltaFore = `https://api.openweathermap.org/data/2.5/forecast?lat=-24.79&lon=-65.44&appid=902647b55a8f06d112512d2e9c5051f8&units=metric`;
 
-//-----DATE------
-const today = new Date();
-const year = today.getFullYear();
-document.querySelector("#currentyear").textContent = year;
-let lastModification = new Date(document.lastModified)
-document.getElementById("lastModified").textContent = lastModification.toLocaleDateString("en-US");
+
+async function forecastWeather(saltaFore) {
+    try {
+        const response = await fetch(saltaFore);
+        if (response.ok) {
+            const dataFore = await response.json();
+            DisplayForecast(dataFore);
+        }
+        else {
+            throw error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function DisplayForecast(dataFore) {
+    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const d = new Date();
+    const todayIndex = d.getDay();
+
+    const done = document.getElementById('done');
+    done.innerHTML = `<strong>${dayNames[(todayIndex + 1) % 7]}:</strong> ${Math.round(dataFore.list[8].main.temp)}°C`;
+
+    const dtwo = document.getElementById('dtwo');
+    dtwo.innerHTML = `<strong>${dayNames[(todayIndex + 2) % 7]}:</strong> ${Math.round(dataFore.list[16].main.temp)}°C`;
+
+    const dthree = document.getElementById('dthree');
+    dthree.innerHTML = `<strong>${dayNames[(todayIndex + 3) % 7]}:</strong> ${Math.round(dataFore.list[24].main.temp)}°C`;
+}
+
+forecastWeather(saltaFore);
