@@ -375,7 +375,7 @@ election5.addEventListener("click", () => {
 });
 
 
-// //-----DIALOG-----
+//-----DIALOG-----
 const modal = document.getElementById('coming-soon');
 const closeDialog = document.getElementById('closeModal');
 const openDialog = document.querySelectorAll('.not-yet');
