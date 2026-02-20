@@ -111,6 +111,12 @@ header h1 {
     font-style: normal;
 }
 
+#portal{
+    box-sizing: border-box;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
 h2 {
     padding-left: 5px
 }
