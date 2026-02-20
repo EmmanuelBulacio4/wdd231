@@ -323,4 +323,8 @@ footer {
     li a:hover {
         text-decoration: underline
     }
+
+    .w-card{
+        grid-column: 1/3;
+    }
 }
