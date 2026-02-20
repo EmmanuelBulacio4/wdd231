@@ -27,4 +27,4 @@ const teacherRev = new URLSearchParams(window.location.search);
 document.querySelector('#message').innerHTML = `
     <p>You rated us with ${teacherRev.get('punctuation')} stars!!!</p>
     <p>We shall improve our service with you review: <p>
-    <p>${teacherRev.get('wreview')}</p>`
+    <p>"${teacherRev.get('wreview')}"</p>`
