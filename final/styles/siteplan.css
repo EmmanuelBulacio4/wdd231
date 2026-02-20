@@ -95,14 +95,20 @@ header h1 {
     display: none
 }
 
-.lists h3,
+.lists{
+    justify-items: center;
+    border: 1px solid gray;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
 .lists li {
     display: flex;
     color: var(--color2);
     margin: 1rem auto 0;
     font-family: Parkisans;
     font-weight: 300;
-    font-style: normal
+    font-style: normal;
 }
 
 h2 {
