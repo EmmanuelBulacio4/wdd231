@@ -96,27 +96,9 @@ footer {
         padding: 1.25rem
     }
 
-    .navigation {
-        display: flex;
-        grid-column: 3/4
-    }
+    .review-notice{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 10px;
 
-    .navigation ul {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-        animation: none;
-        justify-content: end;
-        gap: 1rem
-    }
-
-    .navigation li {
-        border-bottom: none;
-        grid-column: 2/4
-    }
-
-    #hamburger {
-        display: none
-    }
-}
+}}
