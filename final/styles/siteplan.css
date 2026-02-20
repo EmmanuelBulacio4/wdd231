@@ -171,6 +171,17 @@ dialog button {
     border-radius: 5px
 }
 
+.w-card{
+    margin: 1rem;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.w-card p{
+    text-align: center;
+}
+
 dialog button,
 footer {
     background-color: var(--main-color)
@@ -260,7 +271,7 @@ footer {
 
     main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 0.5fr 2fr;
         gap: 2rem;
         padding: 1rem
     }
