@@ -1,5 +1,7 @@
-let counter = 0;
+import { displayDates } from "./date.mjs";
+displayDates(); 
 
+let counter = 0;
 window.addEventListener('DOMContentLoaded', function() {
     const label = document.querySelector("strong");
     const rev = localStorage.getItem("opinions-did"); 
@@ -15,3 +17,6 @@ window.addEventListener('DOMContentLoaded', function() {
         label.textContent = counter;
     }
 });
+
+
+
